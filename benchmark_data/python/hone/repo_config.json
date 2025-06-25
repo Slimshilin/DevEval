@@ -16,10 +16,12 @@
         "unit_tests/test_csv_utils.py":["hone.py"]
     },
     "code_file_DAG": {
-        "hone/__init__.py": ["hone/hone.py", "hone/utils/csv_utils.py", "hone/utils/json_utils.py"]
+        "hone/hone.py": ["hone/utils/csv_utils.py"],
+        "hone/utils/csv_utils.py": [],
+        "hone/utils/json_utils.py": []
     },
-    "unit_test_script": "pytest --cov=hone --cov-report=term-missing --json-report --json-report-file=unit_test_report.json test",
-    "acceptance_test_script": "python -m unittest test_acceptance.py",
+    "unit_test_script": "pytest --cov=hone --cov-report=term-missing --json-report --json-report-file=unit_test_report.json unit_tests",
+    "acceptance_test_script": "python -m unittest acceptance_tests/test_acceptance.py",
     "coarse_unit_test_prompt": {
         "unit_tests/test_csv_utils.py": "Develop unit tests in 'unit_tests/test_csv_utils.py' for the CSV utility functions of 'hone'. Ensure correct CSV reading and data handling. Dependencies: os, unittest.",
         "unit_tests/test_hone.py": "Develop unit tests in 'unit_tests/test_hone.py' for the Hone class. Test the conversion functionality ensuring correct nested JSON creation. Dependencies: os, unittest."

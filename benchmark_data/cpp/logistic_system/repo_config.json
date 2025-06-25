@@ -28,7 +28,7 @@
     },
 
     "unit_test_script": "make test -f makefile_test; make coverage -f makefile_test",
-    "acceptance_test_script": "chmod +x acceptance_tests/test.sh;./acceptance_tests/test.sh",
+    "acceptance_test_script": "./acceptance_tests/test.sh",
     "coarse_unit_test_prompt": {
         "unit_tests/test_account.cpp": "Verify the AccountNode class in test_account.cpp, focusing on the constructor and output operator overload functionalities.",
         "unit_tests/test_expressage.cpp": "Assess the ExpressageNode class in test_expressage.cpp, including default and parameterized constructors, the Sign method, and output stream operator.",

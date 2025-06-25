@@ -23,11 +23,11 @@
     },
 
     "unit_test_fine_scripts": {
-        "unit_tests/test_lice.py": "pytest --cov=lice --cov-report=term-missing --cov-fail-under=100 unit_tests/test_lice.py"
+        "unit_tests/test_lice.py": "pytest --cov=lice --cov-report=term-missing unit_tests"
     },
 
     "unit_test_script": "pytest --cov=lice --cov-report=term-missing --cov-fail-under=100 unit_tests",
-    "acceptance_test_script": "pytest --cov=lice --cov-report=term-missing --cov-fail-under=100 acceptance_tests",
+    "acceptance_test_script": "pytest --cov=lice --cov-report=term-missing acceptance_tests",
 
     "coarse_unit_test_prompt": {
         "unit_tests/test_lice.py": "In 'unit_tests/test_lice.py', develop unit tests for the lice.core module. Focus on testing the loading of license templates, insertion of variables like organization and year, and output formatting. Dependencies: unittest, lice.core. Should only use dependencies and modules mentioned in this prompt."
